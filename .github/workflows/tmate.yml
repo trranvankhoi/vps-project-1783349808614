@@ -320,7 +320,7 @@ jobs:
           } while ($attempt -lt $maxAttempts)
           
           if ($cloudflaredUrl) {
-            $remoteLink = "$cloudflaredUrl/vnc.html"
+            $remoteLink = "$cloudflaredUrl/vnc.html?resize=scale&quality=5&compression=9"
             Write-Host "🌌 Remote VNC URL: $remoteLink"
             
             $remoteLink | Out-File -FilePath "remote-link.txt" -Encoding UTF8 -NoNewline
