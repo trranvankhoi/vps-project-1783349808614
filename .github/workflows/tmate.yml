@@ -366,7 +366,7 @@ jobs:
         
         mkdir -Force ".backup"
         
-        $totalMinutes = 420
+        $totalMinutes = 360
         $restartCheckpoint = 320
         $healthCheckInterval = 15
         $backupInterval = 60
